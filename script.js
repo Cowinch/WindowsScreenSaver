@@ -58,7 +58,7 @@ function bounce(){
     }
 }
 
-//logic for 3d box
+//logic for 3d-mode button
 function threeDimensions(){
     if(dimensions){
         dimensions=false
@@ -72,7 +72,7 @@ function threeDimensions(){
     }
 }
 
-//logic for the button
+//logic for the start-stop button
 function animation(){
     if(!running){
         running=true
@@ -85,5 +85,10 @@ function animation(){
         document.getElementById('the-button').innerText='Start'
         
     }
+}
+
+//logic for the color button
+function changeColor(){
+    document.documentElement.style.setProperty('--box-color', `${document.getElementById('color-text').value}`)
 }
 setInterval(bounce, 10)
