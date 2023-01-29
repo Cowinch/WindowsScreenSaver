@@ -29,7 +29,6 @@
     left:var(--x-axis);
     width: 4vw;
     height: 4vw;
-    background-color: blue;
     animation: var(--animation);
     transform-style: var(--transform-style);
 }
