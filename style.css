@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --y-axis:0;
+    --x-axis:0;
+}
+.background{
+    background-color: #2b2b2b;
+    margin: 5vh 5vw;
+}
+
+#container{
+    width: 35vw;
+    height: 35vh;
+    background-color: black;
+    margin-bottom: 2vh;
+}
+
+#bouncy{
+    position: relative;
+    top:var(--y-axis);
+    left:var(--x-axis);
+    width: 4vw;
+    height: 4vw;
+    background-color: blue;
+}
+button{
+    padding: 3px 5px;
+}
