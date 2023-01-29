@@ -9,9 +9,20 @@
 </head>
 <body class="background">
     <div id="container">
-        <div id="bouncy"></div>
+        <div id="bouncy">
+            <div class="top"></div>
+            <div>
+                <span style="--i:0;"></span>
+                <span style="--i:1;"></span>
+                <span style="--i:2;"></span>
+                <span style="--i:3;"></span>
+            </div>
+        </div>
     </div>
-    <button id="the-button" onclick="animation()">Start</button>
+    <div>
+        <button id="the-button" onclick="animation()">Start</button>
+        <button onclick="threeDimensions()">3d mode</button>
+    </div>
 </body>
 <script src="script.js"></script>
 </html>
