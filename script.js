@@ -17,6 +17,7 @@ function bounce(){
             containerMin=0,
             boxSize=document.getElementById('bouncy').offsetWidth
 
+        //If the box is 3d, the collsions are updated
         if(dimensions){
             boxSize=document.getElementById('bouncy').offsetWidth+(boxSize*.1)
             containerMin=boxSize*.15
@@ -35,6 +36,10 @@ function bounce(){
         }
 
         //collision check for when the box bumps into the egde of the container. changes direction.
+        /*
+            the additional logic for changing the x and y value are for when you abruptly make the screen smaller.
+            if the container abruptly becomes smaller, the box will always move to stay within the dimensions
+        */
         if(x>=containerMaxWidth-boxSize){
             x=containerMaxWidth-boxSize
             xMovement='right'
