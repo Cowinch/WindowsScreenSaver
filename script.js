@@ -5,7 +5,8 @@ let x=0,
     xMovement='left',
     yMovement="down"
 
-let running=false
+let running=false,
+    dimensions=false
     
 
 function bounce(){
@@ -53,7 +54,6 @@ function bounce(){
 }
 
 //logic for 3d box
-let dimensions=false
 function threeDimensions(){
     if(dimensions){
         dimensions=false
