@@ -58,6 +58,7 @@
     height: 100%;
     background: blue;
     transform: rotateY(calc(90deg * var(--i))) translateZ(var(--offset));
+    border: 1px solid black;
 }
 
 .top{
@@ -66,11 +67,19 @@
     left: 0;
     width: 4vw;
     height: 4vw;
-    background-color: rgb(29, 29, 255);
+    background-color: blue;
     transform: rotateX(90deg) translateZ(var(--offset));
 }
 
-
+.buttons{
+    display: flex;
+    gap: 1vw;
+}
 button{
     padding: 3px 5px;
+    color: black;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(206, 206, 13);
+    cursor: pointer;
 }
